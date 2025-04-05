@@ -9,5 +9,6 @@ export const generateToken = (userId , res) => {
         secure: process.env.NODE_ENV !== "development",// Ensures the cookie is sent over HTTPS only
         sameSite: "strict",// Helps prevent CSRF attacks
     });
+    return {token};
 }
-return {token};
+
